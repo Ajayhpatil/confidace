@@ -45,7 +45,10 @@ public class ConfidaceApplication {
 
 
 		System.out.println("checking the git changes ");
-		System.out.println("checking the git changes ");	
+		System.out.println("checking the git changes ");
+		System.out.println("checking the git changes ");
+
+		System.out.println("checking the git changes ");
 		System.out.println("checking the git changes ");
 
        classwebclient cienttewed  = new classwebclient();
