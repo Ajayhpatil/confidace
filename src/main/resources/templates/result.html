@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Result</title>
+  <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #43e97b, #38f9d7);
+            text-align: center;
+            margin-top: 100px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="card">
+  <h2>Welcome 🎉</h2>
+
+  <p><b>Username:</b> <span th:text="${user}"></span></p>
+  <p><b>Password:</b> <span th:text="${pass}"></span></p>
+
+  <form action="/exit" method="get">
+    <button type="submit">Exit</button>
+  </form>
+
+  <h3>User Added Successfully ✅</h3>
+</div>
+
+</body>
+</html>

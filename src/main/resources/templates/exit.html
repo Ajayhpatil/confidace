@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exit Page</title>
+
+  <style>
+    /* 🌈 Animated background */
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff6a00, #ee0979, #00c6ff, #0072ff);
+      background-size: 400% 400%;
+      animation: gradientBG 8s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 💳 Card */
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      width: 350px;
+      color: white;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      animation: pop 1s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ✅ Checkmark animation */
+    .checkmark {
+      font-size: 60px;
+      color: #00ff88;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    p {
+      opacity: 0.9;
+    }
+
+    /* 🔘 Button glow */
+    .btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      background: #00c6ff;
+      transition: 0.3s;
+      box-shadow: 0 0 15px #00c6ff;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #00c6ff;
+    }
+
+    /* 🎈 Floating particles */
+    .particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 6s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh); opacity: 0; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- 🎈 particles -->
+<div class="particle" style="left:10%; animation-delay:0s;"></div>
+<div class="particle" style="left:25%; animation-delay:2s;"></div>
+<div class="particle" style="left:40%; animation-delay:4s;"></div>
+<div class="particle" style="left:60%; animation-delay:1s;"></div>
+<div class="particle" style="left:80%; animation-delay:3s;"></div>
+
+<!-- 💳 Card -->
+<div class="card">
+
+  <div class="checkmark">✔</div>
+
+  <h1>Good Bye 👋</h1>
+  <p>You have successfully exited</p>
+
+  <p>Thank you for using our system 🚀</p>
+
+  <form action="/form">
+    <button class="btn">Go Back</button>
+  </form>
+
+</div>
+
+</body>
+</html>
