@@ -43,13 +43,7 @@ public class ConfidaceApplication {
 
 		System.out.println(nodeobj.get("address").get("geo").get("lat").asString());
 
-
-		System.out.println("checking the git changes ");
-		System.out.println("checking the git changes ");
-		System.out.println("checking the git changes ");
-
-		System.out.println("checking the git changes ");
-		System.out.println("checking the git changes ");
+		
 
        classwebclient cienttewed  = new classwebclient();
 		cienttewed.webclientapicalling();

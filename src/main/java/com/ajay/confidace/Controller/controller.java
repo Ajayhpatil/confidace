@@ -27,6 +27,8 @@ public class controller {
     @PostMapping("/add")
     public respone Useraddition (@RequestBody user userobj){
 
+        System.out.println("feature");
+
         respone responeobj =new respone();
         responeobj.setRespone("user added1");
         System.out.println(userobj.getUser()+
