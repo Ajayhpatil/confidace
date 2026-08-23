@@ -43,6 +43,8 @@ public class ConfidaceApplication {
 
 		System.out.println(nodeobj.get("address").get("geo").get("lat").asString());
 
+
+		System.out.println("addeded");
 		
 
        classwebclient cienttewed  = new classwebclient();
